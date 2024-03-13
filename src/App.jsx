@@ -34,7 +34,7 @@ function App() {
         <input placeholder="ค่าบน" style={{padding:"12px" , borderRadius:"12px", border:"none"}} type='number' onChange={(e)=>setUpper(e.target.value)} value={upper}/>
         <label>ค่าล่าง</label>
         <input placeholder="ค่าล่าง" style={{padding:"12px" , borderRadius:"12px", border:"none"}} type='number' onChange={(e)=>setLower(e.target.value)} value={lower}/>
-        <input type='date'onChange={(e)=>setDate(e.target.value)} value={date} style={{marginTop:"24px"}}/>
+        <input type='date'onChange={(e)=>setDate(e.target.value)} value={date} style={{marginTop:"24px"}}  placeholder='กรุณาเลือกวันที่'/>
      </form>
         
       
