@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import axios from 'axios'
 import DatePicker from 'react-date-picker';
+import imgblood from './assets/hypertension-01.png.webp'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
   return (
     <>
        <h1>ตรวจความดัน</h1>
+      <img src={imgblood} className='blodd-img' />
      <form  style={{display:"grid"}} autoComplete='off'>
      <h2 style={{textAlign:"left"}}>ค่าบน </h2>
         <input placeholder="ค่าบน" style={{padding:"12px" , borderRadius:"12px", border:"none"}} type='number' onChange={(e)=>setUpper(e.target.value)} value={upper}/>
